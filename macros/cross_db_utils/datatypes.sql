@@ -1,7 +1,7 @@
 {# string  -------------------------------------------------     #}
 
 {%- macro type_string() -%}
-  {{ adapter.dispatch('type_string', packages = dbt_utils._get_utils_namespaces())() }}
+  {{ adapter.dispatch('type_string', packages = dbt_sqlserver_utils._get_utils_namespaces())() }}
 {%- endmacro -%}
 
 {% macro default__type_string() %}
